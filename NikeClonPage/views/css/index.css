@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    width: 100%;
+    position: fixed;
+}
+header .navigator{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    /* background: #EEEEEE; */
+}
+header .navigator img{
+    position: relative;
+    top: 0;
+    left: 10px;
+    width: 100px;
+    object-fit: cover;
+}
+header .navigator ul{
+    display: flex;
+    margin: 15px;
+}
+header .navigator ul li{
+    padding: 0px 20px;
+    list-style: none;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    /* font-family: 'Anton', sans-serif; */
+}
+.content-nav{
+    position: relative;
+    top: 120px;
+    left: 100px;
+    width: 400px;
+}
+.content-nav .text-title{
+    color: #fff;
+    font-family: 'Anton', sans-serif;
+    font-size: 70px;
+}
+.content-nav .btn{
+    padding: 20px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    outline: none;
+    font-weight: bolder;
+    width: 250px;
+    position: relative;
+    left: 30px;
+    top: 15px;
+    cursor: pointer;
+}
+.content-nav .btn:active{
+    transform: scale(.9);
+}
+.portada{
+    overflow: hidden;
+    widows: 100vw;
+    height: 100vh;
+}
+.portada img{
+    width: 100%;
+}
+.txt-title{
+    display: flex;
+    position: relative;
+    top: 150px;
+    color: #414141;
+    font-family: 'Anton', sans-serif;
+    justify-content: center;
+}
+.container{
+    position: relative;
+    top: 200px;
+    display: flex;
+    justify-content: center;
+    color: #414141;
+}
+.container h1{
+    color: #9E9E9E;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    flex-wrap: wrap;    
+    margin: 20px;
+}
+main .card{
+    width: 400px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 10px 4px 50px 3px lightgray;
+    transition: all 400ms ease;
+}
+main .card .pay p{
+    color: gray;
+    top: 5px;
+    position: relative;
+    font-size: 15px;
+}
+main .card:hover{
+    transform: translateY(-10%);
+}
+main .card .pay{
+    width: 100%;
+    height: 160px;
+    position: relative;
+    top: 20px;
+    left: 100px;
+    bottom: 40px;
+}
+main .card .pay h1{
+    color: #606060;
+}
+main .card .pay button{
+    padding: 10px;
+    width: 140px;
+    outline: none;
+    border: none;
+    left: 20px;
+    top: 20px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 1px;
+}
+main .card .pay button:active{
+    transform: scale(.9);
+}
+main .card .pay button:hover{
+    background: lightgray;   
+}
+main .card img{
+    width: 100%;
+}
+
+@media screen and (max-width: 630px) {
+    main .card .pay{
+        left: 0;
+        text-align: center;
+        font-size: 10px;
+    }
+    main .card .pay button{
+        left: 0;
+        width: 100px;
+    }
+}
